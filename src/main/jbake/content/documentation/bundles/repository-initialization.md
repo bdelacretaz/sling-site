@@ -48,6 +48,8 @@ The language is self-explaining but please refer to the actual test cases for de
     end
 
     create service user bob_the_service
+    create service user zoo_the_keeper with path relative/zoo
+    create service user zoo_the_keeper with path /absolute/zoo
 
     set ACL on /tmp
         allow some:otherPrivilege for bob_the_service
