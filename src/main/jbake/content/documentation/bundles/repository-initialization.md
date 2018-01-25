@@ -48,6 +48,10 @@ The language is self-explaining but please refer to the actual test cases for de
     end
 
     create service user bob_the_service
+
+    # 'with path' requires
+    #  o.a.s.repoinit.parser 1.2.2
+    #  o.a.s.jcr.repoinit 1.1.8
     create service user zoo_the_keeper with path relative/zoo
     create service user zoo_the_keeper with path /absolute/zoo
 
@@ -61,7 +65,7 @@ The language is self-explaining but please refer to the actual test cases for de
     # Nodetypes and mixins applied to just a path element
     # Specifying mixins require
     # o.a.s.repoinit.parser 1.2.0 and
-    # o.a.s.jcr.repoinit 1.2.0
+    # o.a.s.jcr.repoinit 1.1.6
     create path /content/example.com(sling:Folder mixin mix:referenceable,mix:shareable)
 
     # Mixins applied to just a path element
